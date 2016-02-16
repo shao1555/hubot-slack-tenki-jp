@@ -1,0 +1,29 @@
+{
+  "name": "hubot-slack-tenki-jp",
+  "version": "1.0.0",
+  "description": "shows Tokyo's weather forecast (lang:ja)",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shao1555/hubot-slack-tenki-jp.git"
+  },
+  "keywords": [
+    "hubot-scripts",
+    "hubot",
+    "google"
+  ],
+  "author": "Sho Sawada <shao@1555.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shao1555/hubot-slack-tenki-jp/issues"
+  },
+  "homepage": "https://github.com/shao1555/hubot-slack-tenki-jp#readme",
+  "dependencies": {
+    "phantom": "^2.0.0-alpha.1",
+    "slack-client": "^2.0.2",
+    "temp": "^0.8.3"
+  }
+}
