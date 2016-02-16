@@ -22,13 +22,11 @@ module.exports = (robot) ->
                 height: rect.height
               ).then ->
                 screenShotFile = temp.path(suffix: '.png')
-                res.send(screenShotFile)
                 page.render(screenShotFile).then ->
                   # TODO: slack にアップロード
                   slackWebClient = new slackClient.WebClient(process.env.HUBOT_SLACK_TOKEN)
                   slackWebClient.files.upload {file: fs.createReadStream(screenShotFile), channels: "##{res.envelope.room}"}, (error, info) ->
                     if error != undefined
-                      console.log(error)
                       res.send('アップロードに失敗しました')
                     temp.cleanupSync()
                     ph.exit()

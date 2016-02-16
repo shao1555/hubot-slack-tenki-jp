@@ -1,6 +1,6 @@
 {
   "name": "hubot-slack-tenki-jp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shows Tokyo's weather forecast (lang:ja)",
   "main": "index.coffee",
   "scripts": {
